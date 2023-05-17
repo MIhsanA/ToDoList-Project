@@ -8,8 +8,7 @@ pipeline {
         }
         stage("Build and Test"){
             steps{
-                sh "sudo su"
-                sh "docker build . -t node-app-test-new"
+                sh "sudo docker build . -t node-app-test-new"
             }
         }
         stage("Push to Docker Hub"){
