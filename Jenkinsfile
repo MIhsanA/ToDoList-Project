@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage("Clone Code"){
             steps{
-                git url: "https://github.com/mihsana/ToDoList-Project.git", branch: "master"
+                git url: "https://github.com/MIhsanA/ToDoList-Project.git", branch: "master"
             }
         }
         stage("Build and Test"){
