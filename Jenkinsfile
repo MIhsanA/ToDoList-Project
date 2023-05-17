@@ -8,6 +8,7 @@ pipeline {
         }
         stage("Build and Test"){
             steps{
+                sh "sudo su"
                 sh "docker build . -t node-app-test-new"
             }
         }
